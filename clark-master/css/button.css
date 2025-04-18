@@ -1,0 +1,88 @@
+/* Button Container */
+.hire-me-btn-container {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  /* Stylish Hire Me Button */
+  .hire-me-btn {
+    display: inline-block;
+    background: #FFBD39;
+    color: #000;
+    font-size: 18px;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(255, 189, 57, 0.4);
+    animation: pulse 2s infinite;
+  }
+  
+  /* Pulse Animation */
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 189, 57, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(255, 189, 57, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 189, 57, 0);
+    }
+  }
+  
+  /* Hover Effects */
+  .hire-me-btn:hover {
+    background: #FFBD39;
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(255, 189, 57, 0.6);
+    color: #000;
+  }
+  
+  /* After Effect for Shine */
+  .hire-me-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0.2), rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+    transform: skewX(-25deg);
+    transition: 0.5s;
+  }
+  
+  /* Shine Animation on Hover */
+  .hire-me-btn:hover::after {
+    left: 125%;
+  }
+  
+  .tagcloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .tag-hover {
+    display: inline-block;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .tag-hover:hover {
+    
+    transform: scale(1.1); /* Increase size on hover */
+    font-weight: bold; /* Optional: make text bold on hover */
+  }
+  
